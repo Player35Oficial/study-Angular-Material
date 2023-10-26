@@ -1,0 +1,17 @@
+<h1>Progress bar and Spinner</h1>
+<mat-progress-bar color="primary" mode="determinate" [value]="loadingPercent">
+</mat-progress-bar>
+<br />
+<mat-progress-bar color="accent" mode="determinate" [value]="loadingPercent">
+</mat-progress-bar>
+<br />
+<mat-progress-bar color="warn" mode="determinate" [value]="loadingPercent">
+</mat-progress-bar>
+
+<h1>Loading - Waiting case</h1>
+<mat-progress-bar
+  [value]="queryValue"
+  #wait
+  color="warn"
+  [mode]="queryMode"
+></mat-progress-bar>

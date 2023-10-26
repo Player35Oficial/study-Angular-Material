@@ -6,6 +6,12 @@
     [fixedInViewport]="true"
     [mode]="sidenavMode"
   >
+    <mat-toolbar color="primary"> Smart Examples </mat-toolbar>
+    <mat-nav-list>
+      <a mat-list-item routerLink="/buttonIcon">Button Icon</a>
+      <a mat-list-item routerLink="/formFieldInput">Form Field input</a>
+      <a mat-list-item routerLink="/progressSpinner">Progress Spinner</a>
+    </mat-nav-list>
   </mat-sidenav>
 
   <mat-sidenav-content>
@@ -29,14 +35,6 @@
     <mat-toolbar class="toolbar-submenu" color="primary"
       ><span *ngIf="!popText">My App</span></mat-toolbar
     >
-    <!-- <app-buttons-icons></app-buttons-icons> -->
-    <app-form-field-input></app-form-field-input>
-    <!-- <h1 class="title">{{ scrollHeight | number : "1.2" }}</h1>
-    <h1 class="title">{{ scrollHeight | number : "1.2" }}</h1>
-    <h1 class="title">{{ scrollHeight | number : "1.2" }}</h1>
-    <h1 class="title">{{ scrollHeight | number : "1.2" }}</h1>
-    <h1 class="title">{{ scrollHeight | number : "1.2" }}</h1> -->
+    <router-outlet></router-outlet>
   </mat-sidenav-content>
 </mat-sidenav-container>
-
-<router-outlet></router-outlet>

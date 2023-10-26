@@ -28,7 +28,6 @@ export class AppComponent {
 
   ngOnInit(): void {
     const content = document.getElementsByClassName(SCROLL_CONTAINER)[0];
-    console.log(content);
 
     fromEvent(content, 'scroll')
       .pipe(map(() => content.scrollTop))
