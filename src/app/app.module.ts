@@ -14,9 +14,11 @@ import { TabsComponent } from './tabs/tabs.component';
 import { DatepickerComponent } from './datepicker/datepicker.component';
 import { SnackbarComponent } from './snackbar/snackbar.component';
 import { SnackbarMsnComponent } from './snackbar/snackbar-msn/snackbar-msn.component';
+import { DialogComponent } from './dialog/dialog.component';
+import { DialogModalComponent } from './dialog/dialog-modal/dialog-modal.component';
 
 @NgModule({
-  declarations: [AppComponent, ButtonsIconsComponent, FormFieldInputComponent, ProgressSpinnerComponent, TabsComponent, DatepickerComponent, SnackbarComponent, SnackbarMsnComponent],
+  declarations: [AppComponent, ButtonsIconsComponent, FormFieldInputComponent, ProgressSpinnerComponent, TabsComponent, DatepickerComponent, SnackbarComponent, SnackbarMsnComponent, DialogComponent, DialogModalComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
