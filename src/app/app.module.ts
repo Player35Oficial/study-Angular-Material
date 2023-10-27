@@ -11,9 +11,10 @@ import { FormFieldInputComponent } from './form-field-input/form-field-input.com
 import { MatInputModule } from '@angular/material/input';
 import { ProgressSpinnerComponent } from './progress-spinner/progress-spinner.component';
 import { TabsComponent } from './tabs/tabs.component';
+import { DatepickerComponent } from './datepicker/datepicker.component';
 
 @NgModule({
-  declarations: [AppComponent, ButtonsIconsComponent, FormFieldInputComponent, ProgressSpinnerComponent, TabsComponent],
+  declarations: [AppComponent, ButtonsIconsComponent, FormFieldInputComponent, ProgressSpinnerComponent, TabsComponent, DatepickerComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,

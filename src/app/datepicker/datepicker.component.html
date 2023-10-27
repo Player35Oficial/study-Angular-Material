@@ -1,0 +1,13 @@
+<div class="container">
+  <h1>Datepicker</h1>
+  <mat-form-field>
+    <input matInput [matDatepicker]="picker" [min]="minDate" [max]="maxDate" />
+    <mat-hint>MM/DD/YYYY</mat-hint>
+    <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
+    <mat-datepicker
+      #picker
+      [startAt]="startDate"
+      [touchUi]="platformUi"
+    ></mat-datepicker>
+  </mat-form-field>
+</div>
