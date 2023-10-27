@@ -12,7 +12,7 @@ export class DialogModalComponent {
     @Inject(MAT_DIALOG_DATA) public data: any
   ) {}
 
-  onNoClick(): void {
-    this.dialogRef.close();
+  public closeDialog() {
+    this.dialogRef.close('Returned Biok');
   }
 }

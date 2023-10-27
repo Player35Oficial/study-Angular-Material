@@ -8,19 +8,19 @@ import { MatDialog } from '@angular/material/dialog';
   styleUrls: ['./dialog.component.scss'],
 })
 export class DialogComponent {
-  animal!: string;
-  name!: string;
+  public message = '';
 
-  constructor(public dialog: MatDialog) {}
+  constructor(private dialog: MatDialog) {}
 
-  openDialog(): void {
+  public openDialog() {
     const dialogRef = this.dialog.open(DialogModalComponent, {
-      data: { name: this.name, animal: this.animal },
+      data: 'Biok',
+      height: '400px',
+      width: '600px',
     });
 
     dialogRef.afterClosed().subscribe((result) => {
-      console.log('The dialog was closed');
-      this.animal = result;
+      this.message = result !== undefined ? result : '';
     });
   }
 }

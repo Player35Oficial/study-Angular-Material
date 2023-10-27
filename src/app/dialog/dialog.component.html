@@ -1,10 +1,8 @@
 <div class="container">
-  <mat-form-field>
-    <mat-label>Banana</mat-label>
-    <input matInput [(ngModel)]="name" />
-  </mat-form-field>
-  <button mat-raised-button (click)="openDialog()">Pick one</button>
-  <li *ngIf="animal">
-    You chose: <em>{{ animal }}</em>
-  </li>
+  <h1>Dialog Works</h1>
+  <button mat-raised-button color="primary" (click)="openDialog()">
+    <mat-icon>favorite</mat-icon>
+    My favourite pet
+  </button>
+  <p *ngIf="message">{{ message }}</p>
 </div>

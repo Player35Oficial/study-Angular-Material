@@ -1,14 +1,21 @@
-<h1 mat-dialog-title>Hi {{ data.name }}</h1>
-<div mat-dialog-content>
-  <p>What's your favorite animal?</p>
-  <mat-form-field>
-    <mat-label>Favorite Animal</mat-label>
-    <input matInput [(ngModel)]="data.animal" />
-  </mat-form-field>
-</div>
-<div mat-dialog-actions>
-  <button mat-button (click)="onNoClick()">No Thanks</button>
-  <button mat-button [mat-dialog-close]="data.animal" cdkFocusInitial>
-    Ok
+<h1>Hi {{ data }}</h1>
+
+<mat-dialog-content>
+  <p>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia tempore
+    nemo quos aperiam quo. Saepe consectetur ipsum nesciunt corporis molestiae
+    expedita modi quisquam commodi excepturi illum, officia distinctio id
+    perspiciatis.
+  </p>
+</mat-dialog-content>
+<mat-dialog-actions align="end">
+  <button mat-raised-button (click)="closeDialog()">
+    <mat-icon>close</mat-icon>
+    close
   </button>
-</div>
+
+  <button mat-raised-button [mat-dialog-close]="'Biok from HTML'" color="warn">
+    <mat-icon>close</mat-icon>
+    close
+  </button>
+</mat-dialog-actions>
