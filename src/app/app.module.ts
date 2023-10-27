@@ -12,9 +12,11 @@ import { MatInputModule } from '@angular/material/input';
 import { ProgressSpinnerComponent } from './progress-spinner/progress-spinner.component';
 import { TabsComponent } from './tabs/tabs.component';
 import { DatepickerComponent } from './datepicker/datepicker.component';
+import { SnackbarComponent } from './snackbar/snackbar.component';
+import { SnackbarMsnComponent } from './snackbar/snackbar-msn/snackbar-msn.component';
 
 @NgModule({
-  declarations: [AppComponent, ButtonsIconsComponent, FormFieldInputComponent, ProgressSpinnerComponent, TabsComponent, DatepickerComponent],
+  declarations: [AppComponent, ButtonsIconsComponent, FormFieldInputComponent, ProgressSpinnerComponent, TabsComponent, DatepickerComponent, SnackbarComponent, SnackbarMsnComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
