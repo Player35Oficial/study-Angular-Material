@@ -30,3 +30,7 @@ mat-sidenav-container {
 .title {
   margin-bottom: 500px;
 }
+
+mat-toolbar {
+  z-index: 1000;
+}
