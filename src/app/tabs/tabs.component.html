@@ -1,3 +1,78 @@
 <div class="container">
-  <p>tabs works!</p>
+  <h1>Base tabs</h1>
+  <mat-tab-group>
+    <mat-tab label="First"> Content 1 </mat-tab>
+    <mat-tab label="Second"> Content 2 </mat-tab>
+    <mat-tab label="Third"> Content 3 </mat-tab>
+  </mat-tab-group>
+  <br />
+  <hr />
+
+  <h1>Align tabs</h1>
+  <mat-tab-group mat-stretch-tabs="false" mat-align-tabs="center">
+    <mat-tab label="First"> Content 1 </mat-tab>
+    <mat-tab label="Second"> Content 2 </mat-tab>
+    <mat-tab label="Third"> Content 3 </mat-tab>
+  </mat-tab-group>
+  <br />
+  <hr />
+
+  <h1>Animate tabs</h1>
+  <p>No animate</p>
+  <mat-tab-group animationDuration="0ms">
+    <mat-tab label="First"> Content 1 </mat-tab>
+    <mat-tab label="Second"> Content 2 </mat-tab>
+    <mat-tab label="Third"> Content 3 </mat-tab>
+  </mat-tab-group>
+  <br />
+
+  <p>Very Slow animate</p>
+  <mat-tab-group animationDuration="2000ms">
+    <mat-tab label="First"> Content 1 </mat-tab>
+    <mat-tab label="Second"> Content 2 </mat-tab>
+    <mat-tab label="Third"> Content 3 </mat-tab>
+  </mat-tab-group>
+  <br />
+  <hr />
+
+  <h1>Custom tab labels</h1>
+  <mat-tab-group>
+    <mat-tab>
+      <ng-template mat-tab-label>
+        <mat-icon class="tab-icon">settings</mat-icon>
+        First
+      </ng-template>
+      Content 1
+    </mat-tab>
+    <mat-tab>
+      <ng-template mat-tab-label>
+        <mat-icon class="tab-icon">person</mat-icon>
+        Person
+      </ng-template>
+      Content 2
+    </mat-tab>
+  </mat-tab-group>
+  <br />
+
+  <h1>Inverse tabs</h1>
+  <mat-tab-group headerPosition="below">
+    <mat-tab label="First"> Content 1 </mat-tab>
+    <mat-tab label="Second"> Content 2 </mat-tab>
+    <mat-tab label="Third"> Content 3 </mat-tab>
+  </mat-tab-group>
+  <br />
+  <hr />
+
+  <h1>Colored tabs</h1>
+  <mat-tab-group
+    class="mat-elevation-z4"
+    color="primary"
+    backgroundColor="primary"
+  >
+    <mat-tab label="First"> Content 1 </mat-tab>
+    <mat-tab label="Second"> Content 2 </mat-tab>
+    <mat-tab label="Third"> Content 3 </mat-tab>
+  </mat-tab-group>
+  <br />
+  <hr />
 </div>
