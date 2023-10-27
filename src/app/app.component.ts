@@ -39,7 +39,6 @@ export class AppComponent {
   }
 
   determineHeader(scrollTop: number) {
-    console.log(this.popText);
     this.popText = scrollTop >= TEXT_LIMIT;
     this.applyShadow = scrollTop >= SHADOW_LIMIT;
     this.scrollHeight = scrollTop;
